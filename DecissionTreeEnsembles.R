@@ -57,10 +57,10 @@ finalResult$Rnd_For <- 1-RMSE_rnd/med
 # http://trevorstephens.com/post/73770963794/titanic-getting-started-with-r-part-5-random
 #Build a Conditional Tree Forest
 library(party)
-carfit_cforest <- cforest(f,data = train,control = cforest_unbiased(ntree = 150))
+carfit_cforest <- cforest(f,data = train)
 
 #Predict
-test_pred_cforest <- predict(carfit_cforest,test[,-1],OOB = TRUE)
+test_pred_cforest <- predict(carfit_cforest,test[,-1],OOB = TRUE,type = "response")
 test_pred_cforest
 #Calculate accuracy
 med <- median(test_orig)
