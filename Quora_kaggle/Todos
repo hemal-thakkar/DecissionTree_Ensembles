@@ -1,0 +1,27 @@
+Todos:
+
+1. Basic RFR/XGBoost model
+  > q1 and q2 size
+  > q1 and q2 number of words without stemming
+  > q1 and q2 number of words with stemming
+  > q1 and q2 nouns, verbs
+  > TF IDF sum of all words ?
+  > TF IDF model of all words ? >> mainly to filter out random questions in the test set ?
+  > q1 and q2 find the "focal word" ---> TF IDF ? Eg: Geology, astronomy, 
+    > Cluster the questions --> find distinace from all clusters
+  > Regularization
+  > TF IDF change normalizations
+  > see nltk features, sentiment etc.
+  > train, dev and test
+  > Xgboost svm knn rfr compare reaults... kitchen sink ... find which model can predict what type of questions, visualize
+  
+  
+ 2. Deep Model/Tensor Flow
+  > Train an ANN with inputs as q1 and q2 word vectors [3 or 5 main important vecotrs, identify using TF-IDF]
+  > Classify using a simple deep learning model
+  > See if features from 1. can be reused
+  > Use word vectors for w2v, glove and facebook see kaggle thread
+  > see 224d for more advanced ideas like Named entity recognition
+  
+  
+ 3. Model on top of 1 and 2 ?
